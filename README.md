@@ -1,7 +1,7 @@
 # XenoGlyph - Mission 0
 
 <div align="center">
-  <img src="public/images/xenoglyph-logo.png" alt="XenoGlyph Logo" width="200">
+  <img src="public/Kakarot.png" alt="XenoGlyph Logo" width="200">
 </div>
 
 ## About The Project
