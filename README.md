@@ -1,7 +1,7 @@
 # XenoGlyph - Mission 0
 
 <div align="center">
-  <img src="public/JaneSmith.png" alt="XenoGlyph Logo" width="200">
+  <img src="public/JaneSmith.jpg" alt="XenoGlyph Logo" width="200">
 </div>
 
 ## About The Project
