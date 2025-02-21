@@ -1,0 +1,271 @@
+/* About Page Container */
+.aboutContainer {
+    min-height: 80vh;
+    background-color: #0c0c0c;
+    background-image: 
+      linear-gradient(0deg, rgba(15, 155, 155, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(15, 155, 155, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .aboutContainer::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, 
+                rgba(12, 12, 12, 0) 0%, 
+                rgba(12, 12, 12, 0.8) 100%);
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  /* Hero Section */
+  .aboutHero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem 4rem;
+    position: relative;
+    text-align: center;
+  }
+  
+  .heroContent {
+    z-index: 2;
+  }
+  
+  .neonTitle {
+    font-size: 4.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow: 
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #0ff,
+      0 0 42px #0ff,
+      0 0 82px #0ff;
+    animation: titleGlow 2s ease-in-out infinite alternate;
+  }
+  
+  .neonSubtitle {
+    font-size: 1.8rem;
+    color: #fff;
+    text-shadow: 
+      0 0 7px #fff,
+      0 0 10px #f0f,
+      0 0 21px #f0f;
+    animation: subtitlePulse 3s ease-in-out infinite alternate;
+  }
+  
+  /* Main Content */
+  .mainContent {
+    padding: 4rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* About Grid */
+  .aboutGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 6rem;
+  }
+  
+  /* Team Section */
+  .teamSection {
+    padding: 4rem 0;
+  }
+  
+  .neonSectionTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #fff;
+    text-shadow: 
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #0ff,
+      0 0 42px #0ff;
+    animation: titleGlow 2s ease-in-out infinite alternate;
+  }
+  
+  .teamGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+  
+  /* Team Cards */
+  .teamCard {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.4s ease;
+  }
+  
+  .teamCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 
+      0 0 20px rgba(0, 255, 255, 0.2),
+      0 0 40px rgba(0, 255, 255, 0.1);
+  }
+  
+  .memberImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    overflow: hidden;
+    border: 2px solid rgba(0, 255, 255, 0.3);
+  }
+  
+  .memberImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .memberName {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  }
+  
+  .memberRole {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1rem;
+  }
+  
+  .memberSocial {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .socialLink {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .socialLink:hover {
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+  }
+  
+  /* Stats Section */
+  .statsSection {
+    padding: 4rem 0;
+  }
+  
+  .statsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  
+  .statCard {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 255, 255, 0.1);
+  }
+  
+  .statNumber {
+    font-size: 3rem;
+    color: #0ff;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  }
+  
+  .statLabel {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .aboutGrid,
+    .teamGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .statsGrid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .neonTitle {
+      font-size: 3rem;
+    }
+  
+    .neonSubtitle {
+      font-size: 1.4rem;
+    }
+  
+    .aboutGrid,
+    .teamGrid {
+      grid-template-columns: 1fr;
+    }
+  
+    .statsGrid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  
+    .mainContent {
+      padding: 2rem 1rem;
+    }
+  }
+  
+  /* Animations */
+  @keyframes titleGlow {
+    0%, 100% {
+      text-shadow: 
+        0 0 7px #fff,
+        0 0 10px #0ff,
+        0 0 21px #0ff,
+        0 0 42px #0ff;
+    }
+    50% {
+      text-shadow: 
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #0ff,
+        0 0 42px #0ff,
+        0 0 82px #0ff,
+        0 0 92px #0ff;
+    }
+  }
+  
+  @keyframes subtitlePulse {
+    0%, 100% {
+      text-shadow: 
+        0 0 7px #fff,
+        0 0 10px #f0f;
+    }
+    50% {
+      text-shadow: 
+        0 0 7px #fff,
+        0 0 10px #f0f,
+        0 0 21px #f0f,
+        0 0 42px #f0f;
+    }
+  }
+  
