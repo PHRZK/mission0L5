@@ -1,8 +1,12 @@
 # XenoGlyph - Mission 0
 
+<div align="center">
+  <img src="public/images/xenoglyph-logo.png" alt="XenoGlyph Logo" width="200">
+</div>
+
 ## About The Project
 
-XenoGlyph is a modern web application showcasing innovative digital solutions. This project was created as part of Mission 0 for Mission Ready's L5 Software Development course. The website features a cyberpunk-inspired design with interactive elements and responsive layouts
+XenoGlyph is a modern web application showcasing innovative digital solutions. This project was created as part of Mission 0 for Mission Ready's L5 Software Development course. The website features a cyberpunk-inspired design with interactive elements and responsive layouts.
 
 ### Key Features
 
@@ -19,6 +23,12 @@ XenoGlyph is a modern web application showcasing innovative digital solutions. T
 * JavaScript (ES6+)
 * HTML5
 
-### Developer
-* Samuel Wind
+## Getting Started
 
+To get a local copy up and running, follow these steps:
+
+### Prerequisites
+
+* npm
+  ```sh
+  npm install npm@latest -g
